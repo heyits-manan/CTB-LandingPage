@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Navbar() {
   return (
@@ -18,19 +19,19 @@ export default function Navbar() {
       </div>
       <ul className="flex space-x-8 text-lg">
         <li>
-          <a href="/" className="hover:text-[#FF5F4D]">
+          <Link href="/" className="hover:text-[#FF5F4D]">
             Home
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/" className="hover:text-[#FF5F4D]">
+          <Link href="/" className="hover:text-[#FF5F4D]">
             About
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#contact" className="hover:text-[#FF5F4D]">
+          <Link href="#contact" className="hover:text-[#FF5F4D]">
             Contact
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>
