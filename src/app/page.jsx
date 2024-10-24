@@ -39,19 +39,19 @@ export default function Home() {
       </div>
       <div id="about">
         {/* Food Section */}
-        <div className="flex flex-col lg:flex-row items-center mb-20 lg:space-x-10 mt-16 ">
-          <div className="lg:w-1/2 m-5">
-            <h2 className="text-3xl font-bold text-center lg:text-left mb-4">
+        <div className="flex flex-col lg:flex-row items-center mb-10 lg:space-x-10 bg-gray-800 h-[80vh] ">
+          <div className="lg:w-1/2 m-10 mt-20 text-white">
+            <h2 className="text-3xl font-medium text-center lg:text-left mb-4">
               Discover Deliciousness
             </h2>
-            <p className="text-lg text-center lg:text-left max-w-3xl">
+            <p className="text-lg font-thin text-center lg:text-left max-w-3xl">
               From fresh ingredients to ready-made meals, we&apos;ve got
               everything you need to satisfy your cravings. Whether you&apos;re
               looking for quick bites or gourmet groceries, our app brings a
               variety of food choices to your doorstep.
             </p>
           </div>
-          <div className="lg:w-1/2 flex mt-4 justify-center lg:justify-end">
+          <div className="lg:w-1/2 flex justify-center lg:justify-end">
             <Image
               src="/food.avif"
               alt="Food"
@@ -63,12 +63,12 @@ export default function Home() {
         </div>
 
         {/* Clothes Section (reverse layout) */}
-        <div className="flex flex-col lg:flex-row-reverse items-center mb-20 lg:space-x-10 lg:space-x-reverse bg-gray-800 h-[70vh] ">
+        <div className="flex flex-col lg:flex-row-reverse items-center mb-10 lg:space-x-10 lg:space-x-reverse h-[70vh] ">
           <div className="lg:w-1/2 mt-8 m-10 ">
-            <h2 className="text-3xl text-white font-medium text-center lg:text-left mb-4">
+            <h2 className="text-3xl font-medium text-center lg:text-left mb-4">
               Dress to Impress
             </h2>
-            <p className="text-lg text-white font-thin text-center lg:text-left max-w-3xl">
+            <p className="text-lg  font-thin text-center lg:text-left max-w-3xl">
               Shop the latest fashion trends and update your wardrobe with the
               click of a button. From casual wear to high-end fashion,
               you&apos;ll find everything you need to stay stylish.
@@ -86,12 +86,12 @@ export default function Home() {
         </div>
 
         {/* Electronics Section */}
-        <div className="flex flex-col lg:flex-row items-center mb-20 lg:space-x-10">
-          <div className="lg:w-1/2 m-5">
-            <h2 className="text-3xl font-bold text-center lg:text-left mb-4">
+        <div className="flex flex-col lg:flex-row items-center mb-10 lg:space-x-10 bg-gray-800 h-[70vh]">
+          <div className="lg:w-1/2 m-10 text-white mt-10 ">
+            <h2 className="text-3xl font-medium text-center lg:text-left mb-4">
               Stay Updated with Technology
             </h2>
-            <p className="text-lg text-center lg:text-left max-w-3xl">
+            <p className="text-lg font-thin text-center lg:text-left max-w-3xl">
               Get the latest gadgets and electronics delivered to you. Whether
               you&apos;re upgrading your phone, shopping for a new laptop, or
               getting accessories, our collection of tech products has you
@@ -110,8 +110,8 @@ export default function Home() {
         </div>
 
         {/* Groceries Section (reverse layout) */}
-        <div className="flex flex-col lg:flex-row-reverse items-center mb-20 lg:space-x-10 lg:space-x-reverse bg-gray-800 h-[70vh] ">
-          <div className="lg:w-1/2 text-white mt-8 m-10 ">
+        <div className="flex flex-col lg:flex-row-reverse items-center mb-10 lg:space-x-10 lg:space-x-reverse  h-[70vh] ">
+          <div className="lg:w-1/2 m-10 ">
             <h2 className="text-3xl font-medium text-center lg:text-left mb-4">
               Fresh and Convenient
             </h2>
@@ -131,10 +131,6 @@ export default function Home() {
             />
           </div>
         </div>
-      </div>
-
-      <div id="contact" className="flex justify-center items-center h-[50vh] ">
-        <p className="text-3xl font-semibold">Contacts</p>
       </div>
     </div>
   );
