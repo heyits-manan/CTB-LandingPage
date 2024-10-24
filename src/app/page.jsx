@@ -42,10 +42,10 @@ export default function Home() {
               Discover Deliciousness
             </h2>
             <p className="text-lg text-center lg:text-left max-w-3xl">
-              From fresh ingredients to ready-made meals, we've got everything
-              you need to satisfy your cravings. Whether you're looking for
-              quick bites or gourmet groceries, our app brings a variety of food
-              choices to your doorstep.
+              From fresh ingredients to ready-made meals, we&apos;ve got
+              everything you need to satisfy your cravings. Whether you&apos;re
+              looking for quick bites or gourmet groceries, our app brings a
+              variety of food choices to your doorstep.
             </p>
           </div>
           <div className="lg:w-1/2 flex mt-4 justify-center lg:justify-end">
@@ -67,8 +67,8 @@ export default function Home() {
             </h2>
             <p className="text-lg text-center lg:text-left max-w-3xl">
               Shop the latest fashion trends and update your wardrobe with the
-              click of a button. From casual wear to high-end fashion, you'll
-              find everything you need to stay stylish.
+              click of a button. From casual wear to high-end fashion,
+              you&apos;ll find everything you need to stay stylish.
             </p>
           </div>
           <div className="lg:w-1/2 flex justify-center lg:justify-end  mt-3 ">
@@ -90,8 +90,9 @@ export default function Home() {
             </h2>
             <p className="text-lg text-center lg:text-left max-w-3xl">
               Get the latest gadgets and electronics delivered to you. Whether
-              you're upgrading your phone, shopping for a new laptop, or getting
-              accessories, our collection of tech products has you covered.
+              you&apos;re upgrading your phone, shopping for a new laptop, or
+              getting accessories, our collection of tech products has you
+              covered.
             </p>
           </div>
           <div className="lg:w-1/2 flex justify-center lg:justify-end mb-4">
