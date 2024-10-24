@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="flex justify-between  items-center p-5 shadow-md bg-gray-100  ">
+    <nav className="flex justify-between  items-center p-5 shadow-md bg-white  ">
       <div className="flex items-center">
         <Link href={"/"}>
           <Image

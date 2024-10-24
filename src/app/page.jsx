@@ -6,9 +6,12 @@ export default function Home() {
     <div>
       <div
         id="hero"
-        className="flex flex-col justify-center items-center h-[60vh]  bg-gray-100 "
+        className="flex flex-col justify-center items-center h-[60vh]  bg-white "
       >
-        <p className="text-4xl font-bold text-center">CloseToBuy</p>
+        <p className="text-4xl font-bold text-center">
+          {" "}
+          CLOSE <span className="text-[#FF5F4D]">TO</span> BUY
+        </p>
         <p className="text-lg text-center mt-4 mb-5">
           Everything You Need, Right at Your Doorstep<br></br> Food, Fashion,
           Tech & Groceries!
@@ -34,10 +37,10 @@ export default function Home() {
           </Link>
         </div>
       </div>
-      <div id="about" className="p-10">
+      <div id="about">
         {/* Food Section */}
-        <div className="flex flex-col lg:flex-row items-center mb-20 lg:space-x-10 mt-10">
-          <div className="lg:w-1/2">
+        <div className="flex flex-col lg:flex-row items-center mb-20 lg:space-x-10 mt-16 ">
+          <div className="lg:w-1/2 m-5">
             <h2 className="text-3xl font-bold text-center lg:text-left mb-4">
               Discover Deliciousness
             </h2>
@@ -60,18 +63,18 @@ export default function Home() {
         </div>
 
         {/* Clothes Section (reverse layout) */}
-        <div className="flex flex-col lg:flex-row-reverse items-center mb-20 lg:space-x-10 lg:space-x-reverse">
-          <div className="lg:w-1/2">
-            <h2 className="text-3xl font-bold text-center lg:text-left mb-4">
+        <div className="flex flex-col lg:flex-row-reverse items-center mb-20 lg:space-x-10 lg:space-x-reverse bg-gray-800 h-[70vh] ">
+          <div className="lg:w-1/2 mt-8 m-10 ">
+            <h2 className="text-3xl text-white font-medium text-center lg:text-left mb-4">
               Dress to Impress
             </h2>
-            <p className="text-lg text-center lg:text-left max-w-3xl">
+            <p className="text-lg text-white font-thin text-center lg:text-left max-w-3xl">
               Shop the latest fashion trends and update your wardrobe with the
               click of a button. From casual wear to high-end fashion,
               you&apos;ll find everything you need to stay stylish.
             </p>
           </div>
-          <div className="lg:w-1/2 flex justify-center lg:justify-end  mt-3 ">
+          <div className="lg:w-1/2 flex justify-center lg:justify-end ">
             <Image
               src="/clothes.jpg"
               alt="Clothes"
@@ -84,7 +87,7 @@ export default function Home() {
 
         {/* Electronics Section */}
         <div className="flex flex-col lg:flex-row items-center mb-20 lg:space-x-10">
-          <div className="lg:w-1/2">
+          <div className="lg:w-1/2 m-5">
             <h2 className="text-3xl font-bold text-center lg:text-left mb-4">
               Stay Updated with Technology
             </h2>
@@ -107,18 +110,18 @@ export default function Home() {
         </div>
 
         {/* Groceries Section (reverse layout) */}
-        <div className="flex flex-col lg:flex-row-reverse items-center mb-20 lg:space-x-10 lg:space-x-reverse">
-          <div className="lg:w-1/2">
-            <h2 className="text-3xl font-bold text-center lg:text-left mb-4">
+        <div className="flex flex-col lg:flex-row-reverse items-center mb-20 lg:space-x-10 lg:space-x-reverse bg-gray-800 h-[70vh] ">
+          <div className="lg:w-1/2 text-white mt-8 m-10 ">
+            <h2 className="text-3xl font-medium text-center lg:text-left mb-4">
               Fresh and Convenient
             </h2>
-            <p className="text-lg text-center lg:text-left max-w-3xl">
+            <p className="text-lg text-center font-thin lg:text-left max-w-3xl">
               No more last-minute grocery runs! With a wide range of fresh
               produce and daily essentials, we ensure you have everything you
               need to stock up your pantry, straight from the app.
             </p>
           </div>
-          <div className="lg:w-1/2 flex justify-center lg:justify-end mt-4">
+          <div className="lg:w-1/2 flex justify-center lg:justify-end ">
             <Image
               src="/groceries.jpeg"
               alt="Groceries"
