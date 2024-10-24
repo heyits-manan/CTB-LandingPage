@@ -30,11 +30,11 @@ export default function Navbar() {
             About
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link href="#contact" className="hover:text-[#FF5F4D]">
             Contact
           </Link>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );
