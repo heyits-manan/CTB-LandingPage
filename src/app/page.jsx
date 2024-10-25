@@ -5,8 +5,8 @@ export default function Home() {
   return (
     <div>
       <div id="hero" className="flex bg-white items-center justify-center">
-        <div className="flex flex-col justify-center items-center h-[60vh] md:items-start md:pl-5">
-          <p className="text-4xl font-bold text-center">
+        <div className="flex flex-col justify-center items-center h-[60vh] md:items-start md:pl-5 lg:p-0">
+          <p className="text-4xl font-bold text-center lg:text-5xl">
             CLOSE <span className="text-[#FF5F4D]">TO</span> BUY
           </p>
           <p className="text-lg text-center mt-4 mb-5 md:text-start">
@@ -38,65 +38,65 @@ export default function Home() {
           <Image
             src="/hero.png"
             alt="Hero Image"
-            width={600}
+            width={500}
             height={0}
-            className="rounded-lg h-[60vh]"
+            className="rounded-lg h-[50vh] lg:h-[60vh] md:w-[400px] lg:w-[500px]"
           />
         </div>
       </div>
 
       <div id="about">
         {/* Food Section */}
-        <div className="flex flex-col lg:flex-row items-center mb-10 lg:space-x-10 bg-gray-800 h-[80vh]">
-          <div className="lg:w-1/2 m-10 mt-20 text-white">
-            <h2 className="text-3xl font-medium text-center lg:text-left mb-4">
+        <div className="flex flex-col lg:flex-row items-center mb-10 lg:space-x-10 bg-gray-800 h-[80vh] lg:h-[60vh]  ">
+          <div className="lg:w-1/2 m-10  text-white items-center ">
+            <h2 className="text-3xl font-medium  text-center mb-4 lg:text-left lg:text-6xl lg:w-10 lg:mb-7 ">
               Discover Deliciousness
             </h2>
-            <p className="text-lg font-thin text-center lg:text-left max-w-3xl">
+            <p className="text-xl font-thin text-center lg:text-left max-w-3xl ">
               From fresh ingredients to ready-made meals, we&apos;ve got
               everything you need to satisfy your cravings. Whether you&apos;re
               looking for quick bites or gourmet groceries, our app brings a
               variety of food choices to your doorstep.
             </p>
           </div>
-          <div className="lg:w-1/2 flex justify-center lg:justify-end">
+          <div className="lg:w-1/2 flex justify-center lg:justify-end  ">
             <Image
               src="/food.avif"
               alt="Food"
               width={400}
-              height={300}
-              className="rounded-lg"
+              height={0}
+              className="rounded-2xl lg:w-[600px] lg:mr-10 "
             />
           </div>
         </div>
 
         {/* Clothes Section (reverse layout) */}
-        <div className="flex flex-col lg:flex-row-reverse items-center mb-10 lg:space-x-10 lg:space-x-reverse h-[70vh]">
-          <div className="lg:w-1/2 mt-8 m-10">
-            <h2 className="text-3xl font-medium text-center lg:text-left mb-4">
+        <div className="flex flex-col lg:flex-row-reverse items-center mb-10 lg:space-x-10 lg:space-x-reverse h-[70vh] lg:h-[60vh]">
+          <div className="lg:w-1/2 mt-8 m-10 ">
+            <h2 className="text-3xl font-medium text-center mb-4 lg:text-right lg:text-6xl lg:mb-7 ">
               Dress to Impress
             </h2>
-            <p className="text-lg font-thin text-center lg:text-left max-w-3xl">
+            <p className="text-lg font-thin text-center lg:text-right max-w-3xl">
               Shop the latest fashion trends and update your wardrobe with the
               click of a button. From casual wear to high-end fashion,
               you&apos;ll find everything you need to stay stylish.
             </p>
           </div>
-          <div className="lg:w-1/2 flex justify-center lg:justify-end">
+          <div className="lg:w-1/2 flex justify-center lg:justify-start">
             <Image
               src="/clothes.jpg"
               alt="Clothes"
               width={400}
-              height={300}
-              className="rounded-lg"
+              height={0}
+              className="rounded-2xl lg:w-[600px] lg:ml-10 "
             />
           </div>
         </div>
 
         {/* Electronics Section */}
-        <div className="flex flex-col lg:flex-row items-center mb-5 lg:space-x-10 bg-gray-800 h-[70vh]">
+        <div className="flex flex-col lg:flex-row items-center mb-5 lg:space-x-10 bg-gray-800 h-[70vh] lg:h-[60vh]">
           <div className="lg:w-1/2 m-10 text-white mt-10">
-            <h2 className="text-3xl font-medium text-center lg:text-left mb-4">
+            <h2 className="text-3xl font-medium text-center mb-4 lg:text-left lg:text-6xl lg:mb-7 ">
               Stay Updated with Technology
             </h2>
             <p className="text-lg font-thin text-center lg:text-left max-w-3xl">
@@ -111,19 +111,19 @@ export default function Home() {
               src="/electronics.jpg"
               alt="Electronics"
               width={400}
-              height={300}
-              className="rounded-lg"
+              height={0}
+              className="rounded-2xl lg:w-[600px] lg:mr-10 "
             />
           </div>
         </div>
 
         {/* Groceries Section (reverse layout) */}
-        <div className="flex flex-col lg:flex-row-reverse items-center mb-10 lg:space-x-10 lg:space-x-reverse h-[70vh]">
-          <div className="lg:w-1/2 m-10">
-            <h2 className="text-3xl font-medium text-center lg:text-left mb-4">
+        <div className="flex flex-col lg:flex-row-reverse items-center mb-10 lg:space-x-10 lg:space-x-reverse h-[70vh] lg:h-[60vh]">
+          <div className="lg:w-1/2 m-10 lg:mr-16">
+            <h2 className="text-3xl font-medium text-center mb-4 lg:text-right lg:text-6xl lg:mb-7 ">
               Fresh and Convenient
             </h2>
-            <p className="text-lg text-center font-thin lg:text-left max-w-3xl">
+            <p className="text-lg text-center font-thin max-w-3xl lg:text-right ">
               No more last-minute grocery runs! With a wide range of fresh
               produce and daily essentials, we ensure you have everything you
               need to stock up your pantry, straight from the app.
@@ -134,8 +134,8 @@ export default function Home() {
               src="/groceries.jpeg"
               alt="Groceries"
               width={400}
-              height={300}
-              className="rounded-lg"
+              height={0}
+              className="rounded-2xl lg:w-[600px] lg:ml-10 "
             />
           </div>
         </div>

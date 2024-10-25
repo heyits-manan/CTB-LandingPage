@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="flex justify-between  items-center p-5 shadow-md bg-white  ">
+    <nav className="flex justify-between  items-center p-5 shadow-md bg-white ">
       <div className="flex items-center">
         <Link href={"/"}>
           <Image
@@ -30,11 +30,11 @@ export default function Navbar() {
             About
           </Link>
         </li>
-        {/* <li>
+        <li>
           <Link href="#contact" className="hover:text-[#FF5F4D]">
             Contact
           </Link>
-        </li> */}
+        </li>
       </ul>
     </nav>
   );
