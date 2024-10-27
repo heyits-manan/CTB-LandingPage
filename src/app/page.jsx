@@ -6,17 +6,17 @@ export default function Home() {
     <div>
       <div
         id="hero"
-        className="flex items-center justify-center bg-white h-[60vh] md:h-[60vh] lg:h-[70vh] bg-cover bg-center bg-no-repeat md:bg-hero-pattern "
+        className="flex items-center justify-center bg-white h-[60vh] md:h-[70vh] lg:h-[90vh] bg-cover bg-center bg-no-repeat md:bg-hero-pattern "
       >
-        <div className="flex flex-col justify-center items-center h-[60vh] md:items-start md:pl-5 lg:p-0">
+        <div className="flex flex-col justify-center items-center h-[60vh] md:pl-5 lg:p-0">
           <p className=" text-4xl font-bold text-center md:text-5xl ">
             CLOSE <span className="text-[#FF5F4D]">TO</span> BUY
           </p>
-          <p className="text-lg text-center mt-4 mb-5 md:text-start">
+          <p className="text-lg text-center mt-4 mb-5">
             Everything You Need, Right at Your Doorstep
             <br /> Food, Fashion, Tech & Groceries!
           </p>
-          <div className="flex flex-row items-center gap-5 md:gap-3">
+          <div className="flex flex-row items-center gap-3 md:gap-3">
             <Link href="/">
               <Image
                 src="/AppStore.png"
@@ -38,7 +38,7 @@ export default function Home() {
           </div>
           <Link
             href="/order"
-            className="bg-[#FF5F4D] text-white font-medium py-2 px-6 rounded-full text-lg md:text-xl md:py-3 md:px-8 lg:py-4 lg:px-10 hover:bg-[#ff4a39] transition-colors duration-300 text-center"
+            className="bg-[#FF5F4D] text-white font-medium mt-10 py-2 px-6 rounded-full text-lg md:text-xl md:py-3 md:px-8 lg:py-4 lg:px-10 hover:bg-[#ff4a39] transition-colors duration-300 text-center"
           >
             Order Now
           </Link>
