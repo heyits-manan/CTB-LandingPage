@@ -1,12 +1,17 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
+  const pathname = usePathname();
+
   return (
-    <nav className="flex justify-between  items-center p-5 shadow-md bg-white ">
+    <nav className="flex justify-between items-center p-5 bg-white">
       <div className="flex items-center">
-        <Link href={"/"}>
+        <Link href="/">
           <Image
             src="/logo.webp"
             alt="Logo"
@@ -21,18 +26,35 @@ export default function Navbar() {
       </div>
       <ul className="flex space-x-8 text-lg">
         <li>
-          <Link href="/" className="hover:text-[#FF5F4D]">
+          <Link
+            href="/"
+            className={`${
+              pathname === "/" ? "text-[#FF5F4D] font-semibold" : ""
+            } hover:text-[#FF5F4D]`}
+          >
             Home
           </Link>
         </li>
         <li>
-          <Link href="#about" className="hover:text-[#FF5F4D]">
-            About
+          <Link
+            href="/commission-calculator"
+            className={`${
+              pathname === "/commission-calculator"
+                ? "text-[#FF5F4D] font-semibold"
+                : ""
+            } hover:text-[#FF5F4D]`}
+          >
+            Calculator
           </Link>
         </li>
         <li>
-          <Link href="#contact" className="hover:text-[#FF5F4D]">
-            Contact
+          <Link
+            href="/"
+            className={`${
+              pathname === "/order" ? "text-[#FF5F4D] font-semibold" : ""
+            } hover:text-[#FF5F4D]`}
+          >
+            Order Now
           </Link>
         </li>
       </ul>

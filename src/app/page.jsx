@@ -4,9 +4,12 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div>
-      <div id="hero" className="flex bg-white items-center justify-center">
+      <div
+        id="hero"
+        className="flex items-center justify-center bg-white h-[60vh] md:h-[60vh] lg:h-[70vh] bg-cover bg-center bg-no-repeat md:bg-hero-pattern "
+      >
         <div className="flex flex-col justify-center items-center h-[60vh] md:items-start md:pl-5 lg:p-0">
-          <p className="text-4xl font-bold text-center lg:text-5xl">
+          <p className=" text-4xl font-bold text-center md:text-5xl ">
             CLOSE <span className="text-[#FF5F4D]">TO</span> BUY
           </p>
           <p className="text-lg text-center mt-4 mb-5 md:text-start">
@@ -33,15 +36,12 @@ export default function Home() {
               />
             </Link>
           </div>
-        </div>
-        <div className="hidden md:flex md:w-1/2 md:justify-end">
-          <Image
-            src="/hero.png"
-            alt="Hero Image"
-            width={500}
-            height={0}
-            className="rounded-lg h-[50vh] lg:h-[60vh] md:w-[400px] lg:w-[500px]"
-          />
+          <Link
+            href="/order"
+            className="bg-[#FF5F4D] text-white font-medium py-2 px-6 rounded-full text-lg md:text-xl md:py-3 md:px-8 lg:py-4 lg:px-10 hover:bg-[#ff4a39] transition-colors duration-300 text-center"
+          >
+            Order Now
+          </Link>
         </div>
       </div>
 
@@ -72,11 +72,11 @@ export default function Home() {
 
         {/* Clothes Section (reverse layout) */}
         <div className="flex flex-col lg:flex-row-reverse items-center mb-10 lg:space-x-10 lg:space-x-reverse h-[70vh] lg:h-[60vh]">
-          <div className="lg:w-1/2 mt-8 m-10 ">
-            <h2 className="text-3xl font-medium text-center mb-4 lg:text-right lg:text-6xl lg:mb-7 ">
+          <div className="lg:w-1/2 mt-8 m-10 items-center ">
+            <h2 className="text-3xl font-medium text-center mb-4 lg:text-left lg:text-6xl lg:mb-7">
               Dress to Impress
             </h2>
-            <p className="text-lg font-thin text-center lg:text-right max-w-3xl">
+            <p className="text-xl font-thin text-center lg:text-left max-w-3xl lg:mr-20">
               Shop the latest fashion trends and update your wardrobe with the
               click of a button. From casual wear to high-end fashion,
               you&apos;ll find everything you need to stay stylish.
@@ -120,10 +120,10 @@ export default function Home() {
         {/* Groceries Section (reverse layout) */}
         <div className="flex flex-col lg:flex-row-reverse items-center mb-10 lg:space-x-10 lg:space-x-reverse h-[70vh] lg:h-[60vh]">
           <div className="lg:w-1/2 m-10 lg:mr-16">
-            <h2 className="text-3xl font-medium text-center mb-4 lg:text-right lg:text-6xl lg:mb-7 ">
+            <h2 className="text-3xl font-medium text-center mb-4 lg:text-left lg:text-6xl lg:mb-7 ">
               Fresh and Convenient
             </h2>
-            <p className="text-lg text-center font-thin max-w-3xl lg:text-right ">
+            <p className="text-lg text-center font-thin max-w-3xl lg:text-left mr-20">
               No more last-minute grocery runs! With a wide range of fresh
               produce and daily essentials, we ensure you have everything you
               need to stock up your pantry, straight from the app.
