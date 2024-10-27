@@ -14,8 +14,8 @@ export default function Navbar() {
         <Image
           src="/logo.webp"
           alt="Logo"
-          width={50}
-          height={60}
+          width={40}
+          height={0}
           className="h-[6vh]"
         />
         <div className="hidden text-2xl ml-4 font-bold sm:block">
@@ -23,7 +23,7 @@ export default function Navbar() {
         </div>
       </Link>
 
-      <ul className="flex space-x-8 text-lg">
+      <ul className="flex space-x-4 text-sm md:text-lg">
         <li>
           <Link
             href="/"

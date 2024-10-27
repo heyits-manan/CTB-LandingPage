@@ -13,7 +13,7 @@ export default function Section({
     <div
       className={`flex flex-col lg:flex-row ${
         reverse ? "lg:flex-row-reverse" : ""
-      } items-center mb-10  ${backgroundColor} ${customClasses}`}
+      } items-center mb-4  ${backgroundColor} ${customClasses}`}
     >
       <div className="lg:w-1/2 m-10">
         <h2 className="text-3xl font-medium text-center mb-4 lg:text-left lg:text-6xl lg:mb-7">
