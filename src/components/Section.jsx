@@ -6,12 +6,14 @@ export default function Section({
   imageSrc,
   reverse,
   backgroundColor,
+  customClasses = "",
+  customImageClasses = "",
 }) {
   return (
     <div
       className={`flex flex-col lg:flex-row ${
         reverse ? "lg:flex-row-reverse" : ""
-      } items-center mb-10 lg:space-x-10 h-[70vh] lg:h-[60vh] ${backgroundColor}`}
+      } items-center mb-10  ${backgroundColor} ${customClasses}`}
     >
       <div className="lg:w-1/2 m-10">
         <h2 className="text-3xl font-medium text-center mb-4 lg:text-left lg:text-6xl lg:mb-7">
@@ -27,7 +29,7 @@ export default function Section({
           alt={title}
           width={400}
           height={0}
-          className="rounded-2xl lg:w-[600px] lg:ml-10"
+          className={`rounded-2xl lg:w-[600px] lg:ml-10 ${customImageClasses}`}
         />
       </div>
     </div>
