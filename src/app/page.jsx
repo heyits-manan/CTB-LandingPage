@@ -19,7 +19,7 @@ export default function Home() {
           description="Shop the latest fashion trends and update your wardrobe with the click of a button. From casual wear to high-end fashion, you'll find everything you need to stay stylish."
           imageSrc="/clothes.jpg"
           reverse
-          customClasses="p-2 h-[650px] md:h-[550px] lg:space-x-10 lg:h-[600px]"
+          customClasses="p-2 h-[650px] md:h-[550px] lg:space-x-10 lg:gap-20 2xl:gap-[300px] lg:h-[600px]"
         />
         <Section
           title="Stay Updated with Technology"
@@ -33,7 +33,7 @@ export default function Home() {
           description="No more last-minute grocery runs! With a wide range of fresh produce and daily essentials, we ensure you have everything you need to stock up your pantry, straight from the app."
           imageSrc="/groceries.jpeg"
           reverse
-          customClasses="p-2 h-[650px] md:h-[550px] lg:space-x-10 lg:h-[600px]"
+          customClasses="p-2 h-[650px] md:h-[550px] lg:space-x-10 lg:gap-20 2xl:gap-[300px] lg:h-[600px]"
         />
 
         {/* Section for Uengage */}

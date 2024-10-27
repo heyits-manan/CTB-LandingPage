@@ -8,10 +8,10 @@ export default function HeroSection() {
       className="flex items-center justify-center bg-white h-[60vh] md:h-[70vh] lg:h-[90vh] bg-cover bg-center bg-no-repeat md:bg-hero-pattern"
     >
       <div className="flex flex-col justify-center items-center h-[60vh] md:pl-5 lg:p-0">
-        <p className="text-3xl font-bold text-center md:text-5xl">
+        <p className="text-3xl font-bold text-center md:text-6xl">
           CLOSE <span className="text-[#FF5F4D]">TO</span> BUY
         </p>
-        <p className="text-sm text-center mt-4 mb-5">
+        <p className="text-sm md:text-lg text-center mt-4 mb-5">
           Everything You Need, Right at Your Doorstep
           <br /> Food, Fashion, Tech & Groceries!
         </p>

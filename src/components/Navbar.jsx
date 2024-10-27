@@ -23,7 +23,7 @@ export default function Navbar() {
         </div>
       </Link>
 
-      <ul className="flex space-x-4 text-sm md:text-lg">
+      <ul className="flex space-x-4 lg:space-x-10 text-sm md:text-lg">
         <li>
           <Link
             href="/"
