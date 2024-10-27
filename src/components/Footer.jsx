@@ -27,13 +27,6 @@ export default function Footer() {
         </Link>
       </div>
 
-      {/* Contact Section */}
-
-      {/* <div id="contact" className="flex justify-center items-center h-[20vh]">
-        <p className="text-3xl font-semibold">Contacts</p>
-      </div> */}
-
-      {/* Copyright Section */}
       <div className="py-4">
         <p>
           Copyright ©{" "}

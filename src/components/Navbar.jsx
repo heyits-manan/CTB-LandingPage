@@ -36,6 +36,16 @@ export default function Navbar() {
         </li>
         <li>
           <Link
+            href="/order"
+            className={`${
+              pathname === "/order" ? "text-[#FF5F4D] font-semibold" : ""
+            } hover:text-[#FF5F4D]`}
+          >
+            Order Now
+          </Link>
+        </li>
+        <li>
+          <Link
             href="/commission-calculator"
             className={`${
               pathname === "/commission-calculator"
@@ -44,16 +54,6 @@ export default function Navbar() {
             } hover:text-[#FF5F4D]`}
           >
             Calculator
-          </Link>
-        </li>
-        <li>
-          <Link
-            href="/"
-            className={`${
-              pathname === "/order" ? "text-[#FF5F4D] font-semibold" : ""
-            } hover:text-[#FF5F4D]`}
-          >
-            Order Now
           </Link>
         </li>
       </ul>
