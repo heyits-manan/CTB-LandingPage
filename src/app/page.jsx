@@ -12,8 +12,19 @@ export default function Home() {
           description="From fresh ingredients to ready-made meals, we've got everything you need to satisfy your cravings. Whether you're looking for quick bites or gourmet groceries, our app brings a variety of food choices to your doorstep."
           imageSrc="/food.avif"
           backgroundColor="bg-gray-800 text-white"
-          customClasses="p-2 h-[650px] md:h-[550px] lg:space-x-10 lg:h-[600px]"
+          customClasses="p-2 h-[650px] md:h-[550px] lg:space-x-10 lg:h-[600px] lg:gap-20 2xl:gap-[20px]"
         />
+
+        <Section
+          title="Zero Commission Fees with CTB"
+          description="Enjoy the benefits of our partnership with CTB, where we guarantee a 0% commission fee on all transactions. This means more savings for you and a commitment to our vendors."
+          imageSrc="/savings.png"
+          backgroundColor="bg-green-600 text-white"
+          customClasses="p-2 h-[650px] md:h-[550px] lg:space-x-10 lg:h-[400px] lg:gap-32 2xl:gap-[20px]"
+          customImageClasses="w-[250px] lg:w-[350px] lg:mr-40"
+          reverse
+        />
+
         <Section
           title="Dress to Impress"
           description="Shop the latest fashion trends and update your wardrobe with the click of a button. From casual wear to high-end fashion, you'll find everything you need to stay stylish."
@@ -39,7 +50,7 @@ export default function Home() {
         {/* Section for Uengage */}
         <Section
           title="Seamless Deliveries with uEngage"
-          description="Enjoy a 0% commission model. Our trusted delivery partner, Uengage, ensures timely and reliable deliveries, keeping your satisfaction at the forefront of our service."
+          description="Our trusted delivery partner, Uengage, ensures timely and reliable deliveries, keeping your satisfaction at the forefront of our service."
           imageSrc="https://www.uengage.in/assets/uen_io/images/uengage-logo-white.svg"
           backgroundColor="bg-green-600 text-white"
           customClasses="p-2 h-[500px] md:h-[300px] lg:space-x-10 lg:h-[600px]"

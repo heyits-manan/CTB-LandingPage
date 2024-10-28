@@ -10,31 +10,38 @@ export default function Footer() {
         <Link href={"/"}>
           <Image
             src="/AppStore.png"
-            alt="Logo"
+            alt="App Store"
             width={180}
             height={0}
-            className=" mt-4"
+            className="mt-4"
           />
         </Link>
         <Link href={"/"}>
           <Image
             src="/GooglePlay.png"
-            alt="Logo"
+            alt="Google Play"
             width={200}
             height={0}
-            className=" mt-4"
+            className="mt-4"
           />
         </Link>
       </div>
 
-      <div className="py-4">
+      {/* Email Contact */}
+      <div className="py-2 mt-4" id="contact">
         <p>
-          Copyright ©{" "}
-          <Link href="/" className="text-red-500">
-            CLOSETOBUY
-          </Link>{" "}
-          2024
+          Contact us at:{" "}
+          <Link
+            href="mailto:support@closetobuy.com"
+            className="text-red-500 hover:underline"
+          >
+            support@closetobuy.com
+          </Link>
         </p>
+      </div>
+
+      <div className="py-4">
+        <p>Copyright © CLOSETOBUY 2024</p>
       </div>
     </div>
   );

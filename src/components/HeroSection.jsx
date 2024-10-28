@@ -8,10 +8,10 @@ export default function HeroSection() {
       className="flex items-center justify-center bg-white h-[60vh] md:h-[70vh] lg:h-[90vh] bg-cover bg-center bg-no-repeat md:bg-hero-pattern"
     >
       <div className="flex flex-col justify-center items-center h-[60vh] md:pl-5 lg:p-0">
-        <p className="text-3xl font-bold text-center md:text-6xl">
+        <p className="text-3xl font-bold text-center md:text-6xl 2xl:text-8xl">
           CLOSE <span className="text-[#FF5F4D]">TO</span> BUY
         </p>
-        <p className="text-sm md:text-lg text-center mt-4 mb-5">
+        <p className="text-sm md:text-lg 2xl:text-2xl text-center mt-4 mb-5">
           Everything You Need, Right at Your Doorstep
           <br /> Food, Fashion, Tech & Groceries!
         </p>
@@ -22,7 +22,7 @@ export default function HeroSection() {
               alt="App Store Logo"
               width={180}
               height={0}
-              className="mt-4"
+              className="mt-4 2xl:w-[250px]"
             />
           </Link>
           <Link href="https://play.google.com">
@@ -31,7 +31,7 @@ export default function HeroSection() {
               alt="Google Play Logo"
               width={200}
               height={0}
-              className="mt-4"
+              className="mt-4 2xl:w-[300px]"
             />
           </Link>
         </div>

@@ -9,21 +9,21 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <nav className="flex justify-between items-center p-5 bg-white">
-      <Link href="/" className="flex flex-row items-center">
+    <nav className="flex justify-between items-center p-5 bg-yellow-400">
+      <Link href="/" className="flex flex-row items-center 2xl:gap-2">
         <Image
           src="/logo.webp"
           alt="Logo"
           width={40}
           height={0}
-          className="h-[6vh]"
+          className="h-[6vh] xl:h-[6vh] xl:w-[3vw]"
         />
         <div className="hidden text-2xl ml-4 font-bold sm:block">
           CLOSE <span className="text-[#FF5F4D]">TO</span> BUY
         </div>
       </Link>
 
-      <ul className="flex space-x-4 lg:space-x-10 text-sm md:text-lg">
+      <ul className="flex space-x-4 lg:space-x-10 text-sm md:text-lg lg:text-xl">
         <li>
           <Link
             href="/"
@@ -36,12 +36,12 @@ export default function Navbar() {
         </li>
         <li>
           <Link
-            href="/order"
+            href="#contact"
             className={`${
-              pathname === "/order" ? "text-[#FF5F4D] font-semibold" : ""
-            } hover:text-[#FF5F4D]`}
+              pathname === "#contact" ? "text-[#FF5F4D] font-semibold" : ""
+            } hover:text-[#FF5F4D] `}
           >
-            Order Now
+            Contact
           </Link>
         </li>
         <li>
