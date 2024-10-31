@@ -20,8 +20,8 @@ export default function Home() {
           description="Enjoy the benefits of our partnership with CTB, where we guarantee a 0% commission fee on all transactions. This means more savings for you and a commitment to our vendors."
           imageSrc="/savings.png"
           backgroundColor="bg-green-600 text-white"
-          customClasses="p-2 h-[650px] md:h-[550px] lg:space-x-10 lg:h-[400px] lg:gap-32 2xl:gap-[20px]"
-          customImageClasses="w-[250px] lg:w-[350px] lg:mr-40"
+          customClasses="p-2 h-[650px] md:h-[550px] lg:space-x-10 lg:h-[400px] lg:gap-20 2xl:gap-[20px]"
+          customImageClasses="w-[250px] lg:w-[350px] xl:w-[400px] lg:mr-20 xl:mr-80 xl:mb-12"
           reverse
         />
 
