@@ -11,13 +11,14 @@ export default function Home() {
       <HeroSection />
 
       {/* Carousel Component with Sections */}
-      <Carousel autoSlide={true} autoSlideInterval={3000}>
+      <Carousel autoSlide={false} autoSlideInterval={3000}>
         <Section
           title="Discover Deliciousness"
           description="From fresh ingredients to ready-made meals, we've got everything you need to satisfy your cravings. Whether you're looking for quick bites or gourmet groceries, our app brings a variety of food choices to your doorstep."
           imageSrc="/food.avif"
-          backgroundColor="bg-gray-800 text-white"
+          backgroundColor="bg-[#E34234] text-white"
           customClasses="p-2 h-[650px] mt-[30px] md:mt-[20px]  md:h-[600px] lg:mt-[20px] lg:space-x-10 lg:h-[600px] lg:gap-20 2xl:gap-[20px] 2xl:w-[1500px] 2xl:ml-[-50px]"
+          customImageClasses="lg:mr-[10px] xl:mr-[20px]"
         />
 
         <Section
@@ -25,8 +26,8 @@ export default function Home() {
           description="Enjoy the benefits of our partnership with CTB, where we guarantee a 0% commission fee on all transactions. This means more savings for you and a commitment to our vendors."
           imageSrc="/savings.png"
           backgroundColor="bg-green-600 text-white"
-          customClasses="p-2 m-5 h-[600px] md:h-[550px] lg:mt-[100px] lg:space-x-10 lg:h-[400px] lg:gap-[5px] 2xl:gap-[10px] rounded-lg"
-          customImageClasses="w-[200px] md:w-[250px] lg:w-[350px] xl:w-[400px] lg:mr-20 xl:mr-60 xl:mb-12"
+          customClasses="p-2 m-5  h-[600px] md:h-[500px] md:mt-[50px] lg:mt-[100px] lg:space-x-10 lg:h-[400px] lg:gap-[5px] 2xl:gap-[10px] rounded-lg"
+          customImageClasses="w-[250px] mt-[-80px] md:mt-[-80px] md:w-[250px] lg:mt-[-30px] lg:mr-[150px] lg:w-[320px] xl:w-[350px] xl:mr-[200px] xl:mt-[-40px]"
           reverse
         />
 
@@ -42,8 +43,9 @@ export default function Home() {
           title="Stay Updated with Technology"
           description="Get the latest gadgets and electronics delivered to you. Whether you're upgrading your phone, shopping for a new laptop, or getting accessories, our collection of tech products has you covered."
           imageSrc="/electronics.jpg"
-          backgroundColor="bg-gray-800 text-white"
+          backgroundColor="bg-[#1E90FF] text-white"
           customClasses="p-2 h-[650px]  md:h-[600px] md:mt-[20px] lg:mt-[20px] lg:space-x-10 lg:h-[600px]"
+          customImageClasses="lg:mr-[10px] xl:mr-[20px]"
         />
 
         <Section

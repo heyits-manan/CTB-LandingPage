@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div className="bg-red-200 mt-[200px] text-black flex flex-col justify-center items-center md:mt-[150px]">
+    <div className="bg-gray-800 mt-[200px] text-white flex flex-col justify-center items-center md:mt-[150px]">
       {/* App Store and Play Store Links */}
       <div className=" flex flex-row items-center gap-5">
         <Link href={"/"}>
