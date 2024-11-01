@@ -9,21 +9,24 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <nav className="flex justify-between items-center p-5 bg-yellow-400">
-      <Link href="/" className="flex flex-row items-center 2xl:gap-2">
+    <nav className="flex justify-between items-center p-5 bg-white md:bg-[#fdf18d] md:border-black md:border-b-4 ">
+      <Link
+        href="/"
+        className="flex flex-row items-center ml-5 md:ml-10 2xl:gap-2"
+      >
         <Image
           src="/logo.webp"
           alt="Logo"
           width={40}
           height={0}
-          className="h-[6vh] xl:h-[6vh] xl:w-[3vw]"
+          className="h-[5vh] xl:h-[55px] xl:w-[50px] "
         />
-        <div className="hidden text-2xl ml-4 font-bold sm:block">
+        <div className="hidden text-xl lg:text-2xl ml-5 font-semibold  sm:block">
           CLOSE <span className="text-[#FF5F4D]">TO</span> BUY
         </div>
       </Link>
 
-      <ul className="flex space-x-4 lg:space-x-10 text-sm md:text-lg lg:text-xl">
+      <ul className="flex space-x-4 mr-5 md:mr-10 lg:space-x-10 text-sm md:text-lg lg:text-xl">
         <li>
           <Link
             href="/"
