@@ -41,7 +41,7 @@ function Carousel({ children, autoSlide = false, autoSlideInterval = 3000 }) {
 
       {/* Left Arrow */}
       <div
-        className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer"
+        className=" md:hidden md:group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer"
         onClick={prevSlide}
       >
         <svg
@@ -61,7 +61,7 @@ function Carousel({ children, autoSlide = false, autoSlideInterval = 3000 }) {
 
       {/* Right Arrow */}
       <div
-        className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer"
+        className=" md:hidden md:group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer"
         onClick={nextSlide}
       >
         <svg
@@ -80,7 +80,7 @@ function Carousel({ children, autoSlide = false, autoSlideInterval = 3000 }) {
       </div>
 
       {/* Dots Indicator */}
-      <div className="absolute bottom-[-150px] md:bottom-[-100px]  left-1/2 transform -translate-x-1/2 flex space-x-2">
+      <div className="absolute bottom-[-250px] md:bottom-[-100px]  left-1/2 transform -translate-x-1/2 flex space-x-2">
         {React.Children.map(children, (child, slideIndex) => (
           <div
             key={slideIndex}

@@ -1,7 +1,7 @@
-"use client"; // Ensure this is a client component
+"use client";
 
 import React from "react";
-import Carousel from "../components/Carousel"; // Adjust the path if necessary
+import Carousel from "../components/Carousel";
 import HeroSection from "../components/HeroSection";
 import Section from "../components/Section";
 
@@ -10,15 +10,23 @@ export default function Home() {
     <div>
       <HeroSection />
 
-      {/* Carousel Component with Sections */}
-      <Carousel autoSlide={false} autoSlideInterval={3000}>
+      <Carousel autoSlide={true} autoSlideInterval={3000}>
         <Section
           title="Discover Deliciousness"
           description="From fresh ingredients to ready-made meals, we've got everything you need to satisfy your cravings. Whether you're looking for quick bites or gourmet groceries, our app brings a variety of food choices to your doorstep."
           imageSrc="/food.avif"
           backgroundColor="bg-[#E34234] text-white"
-          customClasses="p-2 h-[650px] mt-[30px] md:mt-[20px]  md:h-[600px] lg:mt-[20px] lg:space-x-10 lg:h-[600px] lg:gap-20 2xl:gap-[20px] 2xl:w-[1500px] 2xl:ml-[-50px]"
+          customClasses="p-2 h-[680px] mt-[30px] md:mt-[20px]  md:h-[600px] lg:mt-[20px] lg:space-x-10 lg:h-[600px] lg:gap-20 2xl:gap-[20px] 2xl:w-[1500px] 2xl:ml-[-50px]"
           customImageClasses="lg:mr-[10px] xl:mr-[20px]"
+        />
+        <Section
+          title="Experience the FoodCourt"
+          description="Explore a variety of food vendors in one place. Our FoodCourt feature allows you to browse, select, and enjoy meals from multiple options, all in a single order."
+          imageSrc="/foodcourt.jpg"
+          backgroundColor="bg-[#FFD700] text-black"
+          customClasses="p-4 m-5 h-[650px] md:h-[500px] md:mt-[50px] lg:mt-[100px] lg:space-x-10 lg:h-[400px] lg:gap-[5px] 2xl:gap-[10px] rounded-lg"
+          customImageClasses="w-[300px] mt-[-10px] md:mt-[-20px] md:w-[450px] lg:mt-[-30px] lg:mr-[20px] lg:w-[400px] xl:w-[650px] xl:mr-[200px] xl:mt-[-40px] rounded-md "
+          reverse
         />
 
         <Section
@@ -26,8 +34,8 @@ export default function Home() {
           description="Enjoy the benefits of our partnership with CTB, where we guarantee a 0% commission fee on all transactions. This means more savings for you and a commitment to our vendors."
           imageSrc="/savings.png"
           backgroundColor="bg-green-600 text-white"
-          customClasses="p-2 m-5  h-[600px] md:h-[500px] md:mt-[50px] lg:mt-[100px] lg:space-x-10 lg:h-[400px] lg:gap-[5px] 2xl:gap-[10px] rounded-lg"
-          customImageClasses="w-[250px] mt-[-80px] md:mt-[-80px] md:w-[250px] lg:mt-[-30px] lg:mr-[150px] lg:w-[320px] xl:w-[350px] xl:mr-[200px] xl:mt-[-40px]"
+          customClasses="p-4 m-5  h-[750px] md:h-[500px] md:mt-[50px] lg:mt-[100px] lg:space-x-10 lg:h-[400px] lg:gap-[5px] 2xl:gap-[10px] rounded-lg"
+          customImageClasses="w-[200px] mt-[-80px] md:mt-[-80px] md:w-[250px] lg:mt-[-30px] lg:mr-[90px] lg:w-[310px] xl:w-[350px] xl:mr-[200px] xl:mt-[-40px]"
           reverse
         />
 
@@ -61,7 +69,7 @@ export default function Home() {
           description="Our trusted delivery partner, Uengage, ensures timely and reliable deliveries, keeping your satisfaction at the forefront of our service."
           imageSrc="https://www.uengage.in/assets/uen_io/images/uengage-logo-white.svg"
           backgroundColor="bg-green-600 text-white"
-          customClasses="p-2 h-[400px] mt-[80px] md:h-[300px] md:mt-[120px] lg:mt-[50px] lg:space-x-10 lg:h-[500px]"
+          customClasses="p-2 h-[500px] mt-[80px] md:h-[300px] md:mt-[120px] lg:mt-[50px] lg:space-x-10 lg:h-[500px]"
           customImageClasses="w-[250px] lg:w-[450px] lg:mr-20"
         />
 
@@ -71,7 +79,7 @@ export default function Home() {
           imageSrc="https://upload.wikimedia.org/wikipedia/commons/8/89/Razorpay_logo.svg"
           reverse
           customClasses="p-2 h-[500px] mt-[80px] md:h-[300px] md:mt-[120px] lg:mt-[150px] lg:space-x-10 lg:h-[300px]"
-          customImageClasses="w-[300px] lg:w-[450px] lg:mr-20"
+          customImageClasses="w-[300px] lg:w-[450px] lg:mr-10"
         />
       </Carousel>
     </div>
