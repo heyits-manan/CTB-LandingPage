@@ -25,7 +25,7 @@ export default function Home() {
           imageSrc="/foodcourt.jpg"
           backgroundColor="bg-[#FFD700] text-black"
           customClasses="p-4 m-5 h-[650px] md:h-[500px] md:mt-[50px] lg:mt-[100px] lg:space-x-10 lg:h-[400px] lg:gap-[5px] 2xl:gap-[10px] rounded-lg"
-          customImageClasses="w-[300px] mt-[-10px] md:mt-[-20px] md:w-[450px] lg:mt-[-30px] lg:mr-[20px] lg:w-[400px] xl:w-[650px] xl:mr-[200px] xl:mt-[-40px] rounded-md "
+          customImageClasses="w-[300px] mt-[-10px] md:mt-[-20px] md:w-[450px] lg:mt-[-30px] lg:mr-[20px] lg:w-[400px] xl:w-[650px] xl:mt-[-10px] rounded-md "
           reverse
         />
 
