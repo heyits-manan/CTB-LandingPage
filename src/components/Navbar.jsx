@@ -1,32 +1,48 @@
 "use client";
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const pathname = usePathname();
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Check if the page is scrolled beyond a certain point
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    // Add event listener on scroll
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      // Clean up the event listener on component unmount
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-    <nav className="flex justify-between items-center p-5 bg-white md:bg-[#fdf18d] md:border-black md:border-b-4 ">
-      <Link
-        href="/"
-        className="flex flex-row items-center ml-5 md:ml-10 2xl:gap-2"
-      >
+    <nav
+      className={`flex justify-between items-center fixed w-full p-5 transition-colors  duration-300 ${
+        isScrolled ? "bg-white shadow-lg" : "bg-transparent"
+      }`}
+    >
+      <Link href="/" className="flex flex-row items-center md:ml-10 2xl:gap-2">
         <Image
           src="/logo.webp"
           alt="Logo"
           width={40}
           height={0}
-          className="h-[5vh] xl:h-[55px] xl:w-[50px] "
+          className="h-[5vh] xl:h-[55px] xl:w-[50px]"
         />
-        <div className="hidden text-xl lg:text-2xl ml-5 font-semibold  sm:block">
+        <div className="hidden text-xl lg:text-2xl ml-5 font-semibold sm:block">
           CLOSE <span className="text-[#FF5F4D]">TO</span> BUY
         </div>
       </Link>
 
-      <ul className="flex space-x-4 mr-5 md:mr-10 lg:space-x-10 text-sm md:text-lg lg:text-xl">
+      <ul className="flex space-x-4 md:mr-10 lg:space-x-10 text-sm md:text-lg lg:text-xl">
         <li>
           <Link
             href="/"
@@ -42,7 +58,7 @@ export default function Navbar() {
             href="#contact"
             className={`${
               pathname === "#contact" ? "text-[#FF5F4D] font-semibold" : ""
-            } hover:text-[#FF5F4D] `}
+            } hover:text-[#FF5F4D]`}
           >
             Contact
           </Link>
