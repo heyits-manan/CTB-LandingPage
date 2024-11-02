@@ -11,21 +11,18 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      // Check if the page is scrolled beyond a certain point
       setIsScrolled(window.scrollY > 50);
     };
 
-    // Add event listener on scroll
     window.addEventListener("scroll", handleScroll);
     return () => {
-      // Clean up the event listener on component unmount
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   return (
     <nav
-      className={`flex justify-between items-center fixed w-full p-5 transition-colors  duration-300 ${
+      className={`z-50 flex justify-between items-center fixed w-full p-5 transition-colors  duration-300 ${
         isScrolled ? "bg-white shadow-lg" : "bg-transparent"
       }`}
     >

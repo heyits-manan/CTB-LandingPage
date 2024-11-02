@@ -1,100 +1,44 @@
-import React, { useState, useEffect } from "react";
+"use client";
+import { useState, useEffect } from "react";
+import Image from "next/image";
 
-function Carousel({ children, autoSlide = false, autoSlideInterval = 3000 }) {
+export default function Carousel({
+  images,
+  customClasses = "",
+  customImageClasses = "",
+}) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const totalSlides = React.Children.count(children);
-
-  const prevSlide = () => {
-    const isFirstSlide = currentIndex === 0;
-    const newIndex = isFirstSlide ? totalSlides - 1 : currentIndex - 1;
-    setCurrentIndex(newIndex);
-  };
+  const [isFading, setIsFading] = useState(false); // Track fade state
 
   const nextSlide = () => {
-    const isLastSlide = currentIndex === totalSlides - 1;
-    const newIndex = isLastSlide ? 0 : currentIndex + 1;
-    setCurrentIndex(newIndex);
-  };
-
-  const goToSlide = (slideIndex) => {
-    setCurrentIndex(slideIndex);
+    setIsFading(true); // Start fade-out
+    setTimeout(() => {
+      setCurrentIndex((prevIndex) =>
+        prevIndex === images.length - 1 ? 0 : prevIndex + 1
+      );
+      setIsFading(false); // Remove fade-out after update
+    }, 500); // Delay transition by the fade duration (500ms here)
   };
 
   useEffect(() => {
-    if (autoSlide) {
-      const slideInterval = setInterval(nextSlide, autoSlideInterval);
-      return () => clearInterval(slideInterval);
-    }
-  }, [currentIndex, autoSlide, autoSlideInterval]);
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, [currentIndex]);
 
   return (
-    <div className="max-w-[1400px] h-[500px] w-full m-auto py-16 px-4 relative group">
-      {React.Children.map(children, (child, index) => (
-        <div
-          className={`absolute inset-0 transition-opacity duration-500 ${
-            index === currentIndex ? "opacity-100" : "opacity-0"
-          }`}
-        >
-          {child}
-        </div>
-      ))}
-
-      {/* Left Arrow */}
-      <div
-        className=" md:hidden md:group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer"
-        onClick={prevSlide}
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="30"
-          height="30"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        >
-          <polyline points="15 18 9 12 15 6"></polyline>
-        </svg>
-      </div>
-
-      {/* Right Arrow */}
-      <div
-        className=" md:hidden md:group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer"
-        onClick={nextSlide}
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="30"
-          height="30"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        >
-          <polyline points="9 18 15 12 9 6"></polyline>
-        </svg>
-      </div>
-
-      {/* Dots Indicator */}
-      <div className="absolute bottom-[-250px] md:bottom-[-100px]  left-1/2 transform -translate-x-1/2 flex space-x-2">
-        {React.Children.map(children, (child, slideIndex) => (
-          <div
-            key={slideIndex}
-            onClick={() => goToSlide(slideIndex)}
-            className={`text-2xl cursor-pointer ${
-              currentIndex === slideIndex ? "text-black" : "text-gray-400"
-            }`}
-          >
-            •
-          </div>
-        ))}
-      </div>
+    <div className={` flex items-center justify-center ${customClasses}`}>
+      <Image
+        src={images[currentIndex]}
+        alt={`Slide ${currentIndex}`}
+        width={700}
+        height={0}
+        className={`transition-opacity duration-500 ease-in-out ${
+          isFading ? "opacity-0" : "opacity-100"
+        } ${customImageClasses}`}
+      />
     </div>
   );
 }
-
-export default Carousel;

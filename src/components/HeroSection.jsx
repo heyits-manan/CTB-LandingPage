@@ -5,7 +5,7 @@ export default function HeroSection() {
   return (
     <div
       id="hero"
-      className="flex items-center justify-center bg-white h-[60vh] md:h-[70vh] lg:h-[90vh] bg-cover bg-center bg-no-repeat md:bg-hero-pattern "
+      className="flex items-center justify-center bg-white h-[100vh] md:h-[70vh] lg:h-[90vh] bg-cover bg-center bg-no-repeat md:bg-hero-pattern "
     >
       <div className="flex flex-col justify-center items-center mt-[100px] h-[60vh] md:pl-5 lg:p-0">
         <p className="text-5xl font-semibold text-center md:text-5xl lg:text-7xl 2xl:text-8xl">

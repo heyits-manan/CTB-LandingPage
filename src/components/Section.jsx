@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Carousel from "../components/Carousel";
 
 export default function Section({
   title,
@@ -8,12 +9,13 @@ export default function Section({
   backgroundColor,
   customClasses = "",
   customImageClasses = "",
+  images,
 }) {
   return (
     <div
       className={`flex flex-col lg:flex-row ${
         reverse ? "lg:flex-row-reverse" : ""
-      } items-center mb-4  ${backgroundColor} ${customClasses}`}
+      } items-center mb-4 ${backgroundColor} ${customClasses}`}
     >
       <div className="lg:w-1/2 m-10">
         <h2 className="text-3xl font-medium text-center mb-4 lg:text-left lg:text-6xl lg:mb-7">
@@ -23,14 +25,22 @@ export default function Section({
           {description}
         </p>
       </div>
-      <div className="lg:w-1/2 flex justify-center lg:justify-end">
-        <Image
-          src={imageSrc}
-          alt={title}
-          width={400}
-          height={0}
-          className={`rounded-2xl lg:w-[600px] lg:ml-10 ${customImageClasses}`}
-        />
+      <div className="lg:w-1/2 flex justify lg:justify-end items-center">
+        {images ? (
+          <Carousel
+            images={images}
+            customClasses={customClasses}
+            customImageClasses={customImageClasses}
+          />
+        ) : (
+          <Image
+            src={imageSrc}
+            alt={title}
+            width={400}
+            height={0}
+            className={`lg:ml-10 ${customImageClasses}`}
+          />
+        )}
       </div>
     </div>
   );
