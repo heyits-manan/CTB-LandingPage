@@ -82,7 +82,7 @@ export default function Home() {
           description="We’ve partnered with Razorpay to offer you a secure and efficient payment gateway. Enjoy T+2 payment settlements and a minimal 2% gateway charge."
           imageSrc="https://upload.wikimedia.org/wikipedia/commons/8/89/Razorpay_logo.svg"
           reverse
-          customClasses="p-2 h-[250px] md:h-[400px] lg:space-x-10 lg:h-[400px]"
+          customClasses="p-2 h-[550px] md:h-[300px] lg:space-x-10 lg:h-[300px] lg:mt-[50px]"
           customImageClasses="w-[300px] lg:w-[450px] lg:mr-5"
         />
       </div>

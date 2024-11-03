@@ -30,7 +30,7 @@ export default function Navbar() {
         <Image
           src="/logo.webp"
           alt="Logo"
-          width={40}
+          width={30}
           height={0}
           className="h-[5vh] xl:h-[55px] xl:w-[50px]"
         />

@@ -13,6 +13,7 @@ module.exports = {
       },
       backgroundImage: {
         "hero-pattern": "url('/hero2.jpg')",
+        "order-food": "url('/order-food-bg.png')",
       },
     },
   },

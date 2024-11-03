@@ -5,10 +5,10 @@ export default function HeroSection() {
   return (
     <div
       id="hero"
-      className="flex items-center justify-center bg-white h-[100vh] md:h-[70vh] lg:h-[90vh] bg-cover bg-center bg-no-repeat md:bg-hero-pattern "
+      className="flex items-center justify-center h-[100vh] md:h-[70vh] lg:h-[90vh] bg-cover bg-center bg-no-repeat md:bg-hero-pattern "
     >
       <div className="flex flex-col justify-center items-center mt-[100px] h-[60vh] md:pl-5 lg:p-0">
-        <p className="text-5xl font-semibold text-center md:text-5xl lg:text-7xl 2xl:text-8xl">
+        <p className="text-4xl font-bold text-center md:text-5xl lg:text-7xl 2xl:text-8xl">
           CLOSE <span className="text-[#FF5F4D]">TO</span> BUY
         </p>
         <p className="text-sm md:text-lg 2xl:text-2xl text-center mt-4 mb-5">
