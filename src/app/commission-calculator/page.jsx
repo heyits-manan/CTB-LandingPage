@@ -20,7 +20,7 @@ export default function Home() {
   };
 
   return (
-    <main className="flex mt-[300px] justify-center items-center h-[400px] bg-gray-100">
+    <main className="flex mt-[400px] mb-[400px] justify-center items-center h-[400px] bg-gray-100 md:mt-[300px] md:mb-[300px] ">
       <div className="flex flex-col md:flex-row items-center w-full max-w-screen-lg p-5 bg-green-400 rounded-lg shadow-lg border-none">
         {/* Left Section */}
         <div className="text-center md:text-left md:w-1/2 p-5">
